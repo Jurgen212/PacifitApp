@@ -1,0 +1,12 @@
+<div class="loginContainer">
+
+    <section class="form-register" [formGroup]="miFormulario">
+        <h4>Bienvenid@ {{ usuarioAEnviar.nombreCompleto }}</h4>
+        <h6>Recuerda que estas en la categoria {{ usuarioAEnviar.masculinofemenino }}</h6>
+        <span *ngIf="infoIncorrecta" class="info">Ingrese un numero valido</span>
+        <input class="controls" formControlName="puntos" type="text" name="nombres" id="nombres" placeholder="¿Cuantos burpees hiciste hoy?">
+        <button class="boton" (click)="guardar()">ENVIAR</button>
+        <a href="#/home" (click)="cerrar()">Cerrar sesion</a>
+      </section>
+</div>
+

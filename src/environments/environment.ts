@@ -3,8 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_USUARIOS  : "https://pacifitregistro.netlify.app/.netlify/functions/api/usuario"    ,
+  API_SOLICITUD : "https://pacifitpendientes.netlify.app/.netlify/functions/api/solicitud",
+  API_PODIUM    : "https://pacifitpodium.netlify.app/.netlify/functions/api/podium"
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

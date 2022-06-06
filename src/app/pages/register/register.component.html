@@ -1,0 +1,24 @@
+<div class="loginContainer" >
+    <section class="form-register" [formGroup]="miFormulario">
+        <h4>Registrate</h4>
+
+        <span *ngIf="errorFormulario"  class="info">Todos los campos deben tener informacion ( El nombre y el usuario no deben tener mas de 20 caracteres )</span>
+        <span *ngIf="usuarioExistente"  class="info"> Ese usuario ya existe </span>
+
+        <input class="controls" type="text" name="nombres" id="nombres" formControlName="usuario" placeholder="Ingrese un nombre de usuario">
+        <input class="controls" type="text" name="nombres" id="nombres" formControlName="nombre" placeholder="Ingrese su nombre y apellido">
+        <input class="controls" type="password" name="apellidos" id="apellidos" formControlName="contrasena" placeholder="Ingrese su contraseña">
+        <input class="controls" type="password" name="nombres" id="nombres"   formControlName="contrasenaRep" placeholder="Ingrese de nuevo la contraseña">
+
+        <select name="entradalista1" formControlName="genero">
+
+          <option>Mujer</option>
+          
+          <option selected="selected" >Hombre</option>
+
+        </select>
+        
+        <button class="boton" (click)="guardar()">ENVIAR</button>
+        <a href="#/home/login">¿Ya tienes una cuenta? inicia sesion aqui</a>
+      </section>
+</div>

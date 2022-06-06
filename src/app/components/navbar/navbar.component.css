@@ -1,0 +1,124 @@
+
+
+.container{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+}
+
+
+
+.network{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-content: center;
+    padding-top: 60px;
+    padding-right: 50px;
+}
+
+
+
+button{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100px;
+    border: none;
+    height: 40px;
+}
+
+span{
+    border-right:  1px solid white;
+    max-width: 10px;
+    height: 40px;
+}
+
+.ig-logo{
+    height: 30%;
+}
+
+
+.logo{
+    height: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    padding-left: 20px;
+}
+
+
+
+img{    
+    height: 100px;
+    margin-left: 40px;
+}
+
+a{
+    height: 100px;
+}
+
+@media all and (min-width: 350px) and ( max-width: 500px ) {
+    img{
+        height: 50px;
+        margin: 0;
+    }
+    
+    .container{
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+    }
+    button{
+     font-size: 20px;
+
+    }
+    
+    span{
+        margin-right: 20px;
+    }
+    .ig-logo{
+        height: 20%;
+    }
+}
+
+@media all and (min-width: 0px) and ( max-width: 350px ) {
+
+    .container{
+        width: 100%;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+   img{
+       height: 20px;
+       margin: 0;
+   }
+
+   span{
+       display: none;
+   }
+
+   button{
+    font-size: 15px;
+   }
+
+   .ig-logo{
+       display: none;
+   }
+ 
+}
+

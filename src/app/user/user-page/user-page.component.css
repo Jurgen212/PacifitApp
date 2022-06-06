@@ -1,0 +1,124 @@
+.loginContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+  
+    background-image: url('/assets/biglogo.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  
+
+.info{
+  color: red;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+  
+  .form-register {
+      width: 30%;
+      background: #24303c;
+      padding: 30px;
+      margin: auto;
+      margin-top: 200px;
+      border-radius: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: center;
+    }
+    
+    .form-register h4 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      align-self: center;
+      
+    }
+    
+    .controls {
+      width: 95%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: white;
+    }
+    
+    .form-register a {
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    
+    .form-register a {
+      color: white;
+      text-decoration: none;
+      align-self: center;
+      cursor: pointer;
+    }
+    
+    .form-register a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    button{
+      align-self: center;
+      width: 50%;
+      background: #1f53c5;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  
+  
+    @media all and (min-width: 0px) and ( max-width: 1110px ) {
+  
+      .form-register {
+        width: 50%;
+        
+      }
+      
+    }
+  
+  
+  
+    @media all and (min-width: 0px) and ( max-width: 650px ) {
+  
+      .form-register {
+        width: 80%;  
+      }
+      
+    }
+  
+  
+    @media all and (min-width: 0px) and ( max-width: 450px ) {
+      .form-register {
+        width: 85%;  
+      }
+  
+      .controls{
+        align-self: center;
+        width: 70%;
+      }
+      
+      a{
+        font-size: 15px;
+      }
+    }
+  
+  

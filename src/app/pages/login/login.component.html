@@ -1,0 +1,14 @@
+<div class="loginContainer" >
+    <section class="form-register" [formGroup]="miFormulario">
+
+        <h4>Iniciar sesion</h4>
+
+      <span *ngIf="infoIncorrecta" class="info">Nombre y/o contraseña invalidos</span>
+
+        <input class="controls" formControlName="usuario" type="text" name="nombres" id="nombres" placeholder="Ingrese su usuario">
+        <input class="controls" formControlName="contrasena" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su contraseña">
+        <button class="boton" (click)="guardar()">ENVIAR</button>
+        <a href="#/home/register">¿Aun no tienes cuenta? Registrate aqui</a>
+        <a href="#/home">Volver</a>
+      </section>
+</div>

@@ -1,0 +1,23 @@
+<div class="loginContainer">
+
+    <section class="form-register">
+        <h4>Bienvenido administrador</h4>
+        <p>A continuacion se mostraran las solicitudes de los atletas</p>
+        
+
+        <div class="info"  *ngIf="arregloSolicitudespendientes.length == 0">Los atletas no han enviado solicitudes</div>
+                <div class="leaderboard">
+                    
+                    <div class="item" *ngFor="let item of arregloSolicitudespendientes; let i = index">
+                        
+                        <button class="acept" (click)="aceptar(i)">Aceptar</button>
+                        <button class="decline" (click)="eliminar(i)">Rechazar</button>
+                        <p class="points">{{ item.cantidadRepeticiones }}</p>
+                        <p class="name">{{ item.nombreCompleto }}</p>
+                        
+                    </div>
+                </div>
+        <a href="#/home" (click)="cerrar()">Cerrar sesion</a>
+      </section>
+</div>
+

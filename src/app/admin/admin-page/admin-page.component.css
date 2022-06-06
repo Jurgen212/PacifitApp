@@ -1,0 +1,311 @@
+.loginContainer{
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+    position: absolute;
+  
+    background-image: url('/assets/biglogo.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  
+
+  .info{
+    color: red;
+  }
+  
+  .form-register {
+      width: 90%;
+      background: #24303c;
+      padding: 30px;
+      margin: auto;
+      margin-top: 200px;
+      border-radius: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: center;
+    }
+    
+    .form-register h4 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      align-self: center;
+      
+    }
+    
+    .controls {
+      width: 95%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: white;
+    }
+    
+    .form-register a {
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    
+    .form-register a {
+      color: white;
+      text-decoration: none;
+      align-self: center;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    
+    .form-register a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    button{
+      align-self: center;
+      width: 50%;
+      background: #1f53c5;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  
+
+  
+    @media all and (min-width: 0px) and ( max-width: 450px ) {
+
+  
+      .controls{
+        align-self: center;
+        width: 95%;
+      }
+      
+      a{
+        font-size: 15px;
+      }
+    }
+  
+  
+
+
+
+/* table */
+
+
+.acept{
+  width: 20%;
+  color: black;
+  background-color: lightgreen;
+}
+
+.decline{
+  width: 20%;
+  color: black;
+  background-color: red;
+}
+
+.leaderboard{
+  width: 100%;
+  height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  direction: rtl;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+}
+
+.leaderboard::-webkit-scrollbar{
+  width: 2px;
+}
+
+.leaderboard::-webkit-scrollbar-thumb{
+  background-color: #f97317;
+}
+
+
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+
+  width: 95%;
+  height: 60px;
+  background-color: white;
+  
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.name{
+  font-size:70%;
+  margin-top: 20px;
+  padding-left: 5px;
+  direction: ltr;
+  color: black;
+}
+
+.points{
+  font-size: 15px;
+  margin-top: 20px;
+  color: black;
+}
+
+
+
+
+/* Media query de solo tabla */
+
+@media all and (min-width:750px) and ( max-width: 1200px ) {
+
+  .leaderboard{
+      width: 100%;
+      
+  }
+
+  .aviso-tabla{
+      justify-content: space-between;
+  }
+
+}
+
+
+
+@media all and (min-width: 410px) and ( max-width: 750px ) {
+
+  .leaderboard{
+      width: 100%;
+  }
+
+  .container{
+      margin-left: 0;
+  }
+  
+  
+  .item{
+      width: 90%;
+      height: 80px;
+  }
+  
+  .name{
+      font-size: 80%;
+      margin-top: 30px;
+  }
+  
+  .points{
+      margin-top: 30px;
+      font-size: 15px;
+  }
+  
+  .aviso-tabla{
+      width: 80%;
+      justify-content: space-between
+
+  }
+
+  .imagen-girl{
+      display: none;
+  }
+
+  .imagen-man{
+      display: none;
+  }
+}
+
+
+@media all and (min-width: 310px) and ( max-width: 410px ) {
+
+
+  .container{
+      margin-left: 0;
+  }    
+  
+  .leaderboard{
+      width: 100%;
+      
+  }
+
+  .item{
+      width: 95%;
+      height: 65px;
+  }
+  
+  .name{
+      font-size: 100%;
+      margin-top: 25px;
+      padding-right: 10px;
+  }
+  
+  .points{
+      font-size: 15px;
+  }
+  
+  .aviso-tabla{
+      width: 80%;
+      font: 15px;
+
+  }
+
+  .imagen-girl{
+      display: none;
+  }
+
+  .imagen-man{
+      display: none;
+  }
+
+}
+
+
+@media all and (min-width: 0px) and ( max-width: 310px ) {
+
+
+  .container{
+      margin-left: 0;
+  }    
+
+  .imagen-girl{
+      display: none;
+  }
+
+  .leaderboard{
+      width: 100%;
+      height: 300px;
+  }
+
+  .item{
+      width: 95%;
+      height: 65px;
+  }
+  
+  .name{
+      margin-top: 15px;
+      font-size: 80%;
+  }
+  
+  .points{
+      font-size: 15px;
+  }
+  
+  .aviso-tabla{
+      font-size: 15px;
+  }
+
+  .imagen-man{
+      display: none;
+  }
+}

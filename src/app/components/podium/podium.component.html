@@ -1,0 +1,63 @@
+
+<div class="container-padre">
+    
+    <div class="container">
+        
+        <p class="podium-tittle">Leaderboard</p>
+        <span>30 Day's Challenge</span>
+
+        
+        <div class="aviso-tabla">
+            <p class="aviso-name">Name</p>
+            <h3 class="aviso-name" style="font-weight: 600;">Men</h3>
+            <p  class="aviso-burpees">Burpees</p>
+        </div>
+
+        <div class="leaderboard">
+            
+            <div class="item" *ngFor="let item of arregloHombresPodium; let i = index">
+                <p class="points">{{ item.cantidadRepeticiones }}</p>
+                <p class="name"> {{i + 1}}. {{ item.nombreCompleto }}</p>
+                
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <div class="imagen-man">
+    
+    </div>
+
+</div>
+
+
+
+<div class="container-padre">
+    
+    <div class="container">
+
+        
+        <div class="aviso-tabla">
+            <p class="aviso-name">Name</p>
+            <h3 class="aviso-name" style="font-weight: 600;">Women</h3>
+            <p  class="aviso-burpees">Burpees</p>
+        </div>
+
+        <div class="leaderboard">
+            
+            <div class="item" *ngFor="let item of arregloMujeresPodium; let i = index">
+                <p class="points">{{ item.cantidadRepeticiones }}</p>
+                <p class="name">{{ i + 1 }}. {{ item.nombreCompleto }}</p>
+                
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <div class="imagen-girl">
+    
+    </div>
+
+</div>
