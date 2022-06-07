@@ -91,9 +91,9 @@ export class LoginComponent implements OnInit {
 
     for( let i = 0; i < this.usuariosObtenidos.length; i++ ){
 
-      if( this.miFormulario.value.usuario == this.usuariosObtenidos[i].nombreUsuario ){
+      if( this.miFormulario.value.usuario.trim() == this.usuariosObtenidos[i].nombreUsuario.trim() ){
 
-        if( this.miFormulario.value.contrasena == this.usuariosObtenidos[i].contrasena ){
+        if( this.miFormulario.value.contrasena.trim() == this.usuariosObtenidos[i].contrasena.trim() ){
          
           this.usuarioIntroducido = this.usuariosObtenidos[i];
           this.infoIncorrecta = false;
@@ -136,7 +136,7 @@ export class LoginComponent implements OnInit {
 
   validarAdmin(){
 
-      if( JSON.parse( localStorage.getItem('userPaci')! ).id == "629d1b436efd6dd562cd4856" ){
+      if( JSON.parse( localStorage.getItem('userPaci')! ).id.trim() == "629d1b436efd6dd562cd4856" ){
         console.log("admin");
         this.router.navigate(['./admin/'])
       }
